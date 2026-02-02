@@ -23,6 +23,12 @@ $ go version
 go version go1.24.12 linux/amd64
 ```
 
+## Building
+
+```
+$ go build -o bin/assecor_api ./api
+```
+
 # Background knowledge
 
 ## Project setup and structure
