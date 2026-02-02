@@ -23,10 +23,33 @@ $ go version
 go version go1.24.12 linux/amd64
 ```
 
+```
+$ go version
+go version version go1.24.12 windows/amd64
+```
+
 ## Building
 
+### Linux x64
 ```
 $ go build -o bin/assecor_api ./api
+```
+
+### Windows
+
+You must have the correct version of gcc and the necessary runtime libraries installed on Windows.
+One method to do this is using msys64. To begin, install msys64 using their installer.
+Once you installed msys64, open a msys64 shell and run:
+
+```
+pacman -S mingw-w64-ucrt-x86_64-gcc
+```
+
+Select "yes" when necessary; it is okay if the shell closes. Then, add gcc to the path using
+whatever method you prefer.
+
+```
+$ go build -o .\bin\assecor_api.exe .\api
 ```
 
 # Background knowledge
